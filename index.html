@@ -4,18 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Test folder</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        ul {
-            list-style: none;
-        }
-    </style>
 </head>
 <body>
     <header>
@@ -31,7 +21,31 @@
     <main>
         <section>
             <h2>heading 2</h2>
-            <p>Lorem ipsum dolor sit amet.</p>
+            <ol>
+                <li>milk</li>
+                <li>chocolate</li>
+                <li>cheese</li>
+            </ol>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus veniam delectus vel harum quia quibusdam at nobis similique, quam neque, modi repellat non eius asperiores? Eligendi cupiditate quae ea dolore voluptate aperiam! Excepturi, cumque minus tenetur consequuntur, laudantium autem eveniet, asperiores voluptatibus dicta aperiam blanditiis aliquam dolorum suscipit! A sapiente consectetur laborum accusamus maiores necessitatibus. Animi explicabo laboriosam itaque magnam quaerat doloremque, ratione fugit. Ratione facilis deserunt maxime. Inventore a commodi praesentium unde, aut saepe culpa voluptates autem, officiis in eaque! Porro beatae architecto, iste exercitationem tempora corrupti eius, sequi officiis possimus itaque aspernatur veniam libero, id saepe dolorem vero.</p>
+            <form action="/">
+                <span>1. Понравилась ли вам притча?</span>
+                <br>
+                <label for="yes"><input type="radio" id="yes" name="question1" checked>Да</label>
+                <br>
+                <label for="nope"><input type="radio" id="nope"  name="question1">Нет</label>
+                <br>
+                <label for="diffucult"><input type="radio" id="diffucult" name="question1">Затрудняюсь ответить</label>
+                <br>
+
+                <span>2. Как вы оцениваете поступок Джона?</span>
+                <br>
+                <label for="positive"><input type="radio" id="positive" name="question2" checked>Положительно, поступил бы также</label>
+                <br>
+                <label for="negative"><input type="radio" id="negative" name="question2">Негативно, осуждаю</label>
+                <br>
+
+                <button type="submit">Отправить</button>
+            </form>
         </section>
         <section>
             <img src="https://images.ctfassets.net/hrltx12pl8hq/a2hkMAaruSQ8haQZ4rBL9/8ff4a6f289b9ca3f4e6474f29793a74a/nature-image-for-website.jpg?fit=fill&w=480&h=320" alt="nature">            
@@ -43,5 +57,25 @@
         <br>
         <a href="https://ru.wikipedia.org/wiki/Opera" target="_blank"><img src="https://cdn2.portableapps.com/OperaGXPortable_128.png" alt="opera gx logo"></a>
     </footer>
+
+    <form action="/">
+        <input type="text" name="email" placeholder="enter email" required>
+        <br>
+        <input type="password" name="password" placeholder="enter password" required>
+        <br>
+        <button type="submit">Войти</button>
+    </form>
+
+    <form action="/">
+        <label for="program"><input type="checkbox" id="program" checked>Установить поддержку виджетов</label>
+        <br>
+        <label for="watch"><input type="checkbox" id="watch">Установить виджет часов</label>
+        <br>
+        <label for="alarm"><input type="checkbox" id="alarm">Установить виджет будильника</label>
+        <br>
+        <button type="submit">Установить</button>
+    </form>
+
+    <script src="script.js"></script>
 </body>
 </html>
